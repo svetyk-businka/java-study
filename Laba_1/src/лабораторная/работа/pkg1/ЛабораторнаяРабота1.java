@@ -1,5 +1,6 @@
 package лабораторная.работа.pkg1;
 import java.lang.Math;
+import java.util.Date;
 
 public class ЛабораторнаяРабота1 {
 
@@ -9,6 +10,7 @@ public class ЛабораторнаяРабота1 {
     {
         ЛабораторнаяРабота1 laba = new ЛабораторнаяРабота1();
         laba.ShowDeveloperName();
+        laba.ShowDevelopmentDate();
         laba.InitArray(5,5);
         laba.ShowArray();
         laba.SortArray((int)laba.GetRandomValue()%laba.twoD.length);
@@ -18,6 +20,12 @@ public class ЛабораторнаяРабота1 {
     public void ShowDeveloperName()
     {
         System.out.println("Developer: Antipenko S.I.");
+    }
+    
+    public void ShowDevelopmentDate()
+    {   
+        Date date = new Date();
+        System.out.println("Current date: " + date.toString());
     }
     
     private double GetRandomValue()
