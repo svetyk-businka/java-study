@@ -1,5 +1,4 @@
-
-package лабораторная.работа.pkg1;
+﻿package лабораторная.работа.pkg1;
 import java.lang.Math;
 
 public class ЛабораторнаяРабота1 {
@@ -57,25 +56,24 @@ public class ЛабораторнаяРабота1 {
     
     public void SortArray(int k)
     {
-        System.out.println("\nColum = " + k + "\n");
+        System.out.println("\nColumn = " + k + "\n");
         
         for (int m = 0; m < twoD.length; m++)
         {
             for (int i = 0; i < twoD.length-1; i++)
             {          
-                    if(twoD[i][k]> twoD[i+1][k])
-                    {  
-                        for(int j = 0; j < twoD.length; j++ )
-                        {    
-                            short buf= twoD[i][j];
-                            twoD[i][j]=twoD[i+1][j];
-                            twoD[i+1][j]=buf;
-                         }    
-                    }
+				if(twoD[i][k]> twoD[i+1][k])
+				{  
+					for(int j = 0; j < twoD.length; j++ )
+					{    
+						short buf= twoD[i][j];
+						twoD[i][j]=twoD[i+1][j];
+						twoD[i+1][j]=buf;
+					 }    
+				}
             }
         }  
-    }  
-        
+    }
 }
 
 
